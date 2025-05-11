@@ -1,0 +1,361 @@
+/* Global Styles */
+html {
+    background: linear-gradient(to right, #000046, #1CB5E0);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Sticky Nav Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    background: white;
+    border-color: black;
+    border-radius: 50px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav a {
+    font-size: 18px;
+    color: rgb(18, 71, 129);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+    transform: scale(1.10);
+}
+
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(to right, #000046, #1CB5E0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding: 40px 100px 0px 100px;
+    height: 100%;
+}
+
+.hero-text {
+    max-width: 600px;
+    padding-left: 25px;
+    align-self: self-start;
+}
+
+.hero-title {
+    padding-top: 120px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    font-size: 65px;
+    margin: 0;
+}
+
+.hero-title:hover {
+    transform: scale(1.05);
+}
+
+.hero-about {
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.hero-image {
+    position: relative;
+    padding-right: 80px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.hero-image img {
+    max-width: 450px;
+    min-width: 450px;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+  
+/* Skills Section */
+.skills-section {
+    background: linear-gradient(to right, #E0EAFC, #CFDEF3);
+    padding: 50px;
+    text-align: center;
+    position: relative; /* Keeps it part of the page flow */
+    margin-top: 50px; /* Adds some space from the top of the page */
+    width: 80%; /* Width of the section */
+    max-width: 1000px; /* Maximum width */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for floating effect */
+}
+
+/* Skills Section Heading */
+.skills-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Skill Category Sections */
+.skill-category {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Section Headings */
+.skill-category h3 {
+    font-size: 1.8em;
+    color: #4831D8;
+    margin-bottom: 10px;
+}
+
+/* Skills List */
+.skill-category p {
+    font-size: 1.2em;
+    color: #444;
+    line-height: 1.6;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+
+/* See My Work Section */
+.work-section {
+background: linear-gradient(135deg, #4831D8, #2C2C54);
+color: #fff;
+text-align: center;
+padding: 20px 20px 40px;
+border-radius: 200px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+margin: 50px auto;
+max-width: 900px;
+}
+
+/* Section Heading */
+.work-section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Cool Button */
+.work-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Hover Effect */
+.work-button:hover {
+    background: #fff;
+    color: #4831D8;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.interests-section {
+    background: linear-gradient(to right, #1D976C, #93F9B9);
+    padding: 20px 50px 50px;
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 100px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.interests-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #002855;
+}
+
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.interest-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.interest-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.interest-card h3 {
+    font-size: 1.5rem;
+    color: #002855;
+}
+
+.interest-card p {
+    font-size: 1rem;
+    color: #444;
+}
+
+
+#contact {
+    text-align: center;
+    padding: 60px 35px;
+    background: linear-gradient(to right, #F2994A,#F37335);
+    color: white;
+    max-width: 650px;
+    position: relative; /* Keeps it part of the page flow */
+    margin-top: 50px; /* Adds some space from the top of the page */
+    width: 80%; /* Width of the section */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for floating effect */
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+#contact-form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#contact-form button:hover {
+    background: #0056b3;
+}
+
+/* Social Media Links */
+.contact-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: #F9D423;
+    text-decoration: underline;
+}
+
+#back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(to right, #e52d27, #b31217);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: background 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+#back-to-top:hover {
+    background: #0056b3;
+}
+
+#back-to-top.show {
+    display: block;
+    opacity: 1;
+}
+

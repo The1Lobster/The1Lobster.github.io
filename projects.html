@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>David J. Martinez - Software Engineer</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .project {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border-radius: 20px;
+      overflow: hidden;
+      height: auto;
+      background: linear-gradient(to right, #7F7FD5, #86A8E7, #91EAE4);
+      color: white;
+      max-width: 950px;
+      position: relative;
+      margin-top: 50px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      flex-wrap: wrap;
+    }
+    .project img, .project video {
+      width: 50%;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+    .project-details {
+      flex: 1;
+      padding: 20px;
+    }
+    .project-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .project-date {
+      font-size: 16px;
+      color: gray;
+      margin-bottom: 10px;
+    }
+    .project-description {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      z-index: 2;
+    }
+    .prev-btn {
+      left: 10px;
+    }
+    .next-btn {
+      right: 10px;
+    }
+    @media (max-width: 768px) {
+      .project {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+      }
+      .project img, .project video {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">About Me</a>
+    <a href="projects.html">My Work</a>
+    <a href="/assets/resume.pdf" target="_blank">Resume</a>
+    <a href="index.html#contact" class="nav-link">Contact Me</a>
+  </nav>
+
+  <section>
+    <!-- Emoji Sentiment Analysis -->
+    <div class="project">
+      <img src="assets/Emoji-Aware.png" alt="Emoji-Aware Sentiment Analysis">
+      <div class="project-details">
+        <div class="project-title">Emoji-Aware Sentiment Analysis Using Dual-Stream Neural Networks</div>
+        <div class="project-date">April 2025</div>
+        <div class="project-description">
+          Developed an emoji-enhanced sentiment analysis system using a dual-stream neural architecture that processes text and emoji inputs independently before merging them via a cross-modal attention mechanism. The project combined fine-tuned BERT embeddings for text and emoji2vec embeddings for emojis, resulting in more accurate interpretations of social media sentiment, especially in sarcasm-heavy or emoji-rich posts. Evaluated on Sentiment140 and Emoji Sentiment Ranking datasets, this approach significantly outperformed traditional text-only models in sentiment classification tasks.
+        </div>
+      </div>
+    </div>
+
+    <!-- ModELS Controller -->
+    <div class="project">
+      <img src="assets/ModELS.png" alt="ModELS LED Controller">
+      <div class="project-details">
+        <div class="project-title">ModELS Controller – Modularly Enabled LED Sequencing</div>
+        <div class="project-date">March 2025 – April 2025</div>
+        <div class="project-description">
+          Designed and implemented the ModELS Controller, a modular LED sequencing peripheral for the SCOMP processor, using VHDL. This hardware controller interprets bitstring instructions to control LED brightness, pattern frequency, and selection via parallel state machines. The design supports 13 customizable LED patterns and enables dynamic behavior like modulation, inversion, and individual LED toggling. By focusing on efficiency, scalability, and user-friendly bit encoding, our modular architecture delivers a robust, flexible system for interactive LED-based applications.
+        </div>
+      </div>
+    </div>
+
+    <!-- Heart Disease Predictor -->
+    <div class="project">
+      <img src="assets/HeartDisease.png" alt="Heart Disease Prediction Dashboard">
+      <div class="project-details">
+        <div class="project-title">Heart Disease Predictor</div>
+        <div class="project-date">August 2024 – December 2024</div>
+        <div class="project-description">
+          Designed and optimized machine learning models to predict heart disease with a strong focus on accuracy and recall. Applied Support Vector Machine (SVM), Random Forest (RF), and Multilayer Perceptron (MLP) models, achieving 92% accuracy and recall with both SVM and RF. Carried out extensive preprocessing, feature engineering, and hyperparameter tuning to ensure model generalizability. This project demonstrated not only strong technical expertise in machine learning but also a keen eye for model evaluation and real-world deployment readiness.
+        </div>
+      </div>
+    </div>
+
+    <!-- Event Driven Visualization Tool -->
+    <div class="project">
+      <div style="width: 50%; position: relative;">
+        <img id="brochureImage" src="assets/Broch1.png" alt="Event Driven Tool Brochure" style="width: 100%; height: auto; border-radius: 20px;">
+        <button class="carousel-btn prev-btn" onclick="prevBrochure()">❮</button>
+        <button class="carousel-btn next-btn" onclick="nextBrochure()">❯</button>
+      </div>
+      <div class="project-details">
+        <div class="project-title">Event Driven Visualization Tool</div>
+        <div class="project-date">January 2024 – December 2024</div>
+        <div class="project-description">
+          Led a multidisciplinary capstone team at SLB to build a cutting-edge visualization tool for large-scale embedded systems written in C and C++. This tool streamlines the onboarding process for developers by parsing legacy codebases and extracting Intermediate Symbolic Representations (ISRs) and variable assignments. Through intuitive, real-time diagrams and data flow visuals, we turned complex system logic into easily digestible insights. The platform was engineered using React/React Native for a responsive interface, Node.js for backend orchestration, and Firebase to ensure seamless real-time synchronization across devices and teams.
+        </div>
+      </div>
+    </div>
+
+    <!-- Dungeon Crawler Game -->
+    <div class="project">
+      <img src="assets/Game.png" alt="Dungeon Crawler Game">
+      <div class="project-details">
+        <div class="project-title">Dungeon Crawler Game</div>
+        <div class="project-date">August 2023 – December 2023</div>
+        <div class="project-description">
+          Built an immersive mobile dungeon crawler game for Android in a team of four, focusing on object-oriented design and clean architecture. Developed in Java using Android Studio, the game employed industry-standard design patterns such as Model-View-Controller (MVC) and Factory Pattern to ensure modularity and scalability. I implemented core gameplay mechanics, character interactions, and UI elements while writing unit tests to maintain robustness. The result was a smooth, responsive gaming experience with maintainable, well-structured code.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <button id="back-to-top">Back to Top ↑</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 David J. Martinez. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const brochureImages = ["assets/Broch1.png", "assets/Broch2.png"];
+    let brochureIndex = 0;
+
+    function showBrochureImage() {
+      document.getElementById("brochureImage").src = brochureImages[brochureIndex];
+    }
+
+    function nextBrochure() {
+      brochureIndex = (brochureIndex + 1) % brochureImages.length;
+      showBrochureImage();
+    }
+
+    function prevBrochure() {
+      brochureIndex = (brochureIndex - 1 + brochureImages.length) % brochureImages.length;
+      showBrochureImage();
+    }
+
+    document.querySelector('a[href="#project-gallery"]')?.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector('#project-gallery');
+      const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+      const startPosition = window.scrollY;
+      const duration = 1200;
+      const headerHeight = document.querySelector('nav')?.offsetHeight || 0;
+      const offsetPosition = targetPosition - headerHeight;
+      let start = null;
+
+      function step(timestamp) {
+        if (!start) start = timestamp;
+        const progress = timestamp - start;
+        const easeInOutCubic = progress / duration < 0.5 
+          ? 4 * (progress / duration) ** 3 
+          : 1 - Math.pow(-2 * (progress / duration) + 2, 3) / 2;
+
+        window.scrollTo(0, startPosition + (offsetPosition - startPosition) * easeInOutCubic);
+        if (progress < duration) {
+          requestAnimationFrame(step);
+        }
+      }
+
+      requestAnimationFrame(step);
+    });
+  </script>
+</body>
+</html>
