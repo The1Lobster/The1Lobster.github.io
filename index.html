@@ -1,235 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David J. Martinez - Software Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>David J. Martinez - Software Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">About Me</a>
-        <a href="projects.html">My Work</a>
-        <a href="/assets/resume.pdf" target="_blank">Resume</a>
-        <a href="#contact" class="nav-link">Contact Me</a>
-    </nav>
+  <nav>
+    <a href="index.html">About Me</a>
+    <a href="projects.html">My Work</a>
+    <a href="assets/resume.pdf" target="_blank">Resume</a>
+    <a href="#contact" class="nav-link">Contact Me</a>
+  </nav>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1 class="hero-title">David J. Martinez</h1>
-            <p class="hero-about">
-                Software Engineer & Georgia Tech CS Graduate. Passionate about creating impactful solutions. 
-                Driven by technology, I'm dedicated to pushing boundaries and collaborating on innovative projects. 
-                Let's build something amazing together!
-            </p>
-        </div>
-        <div class="hero-image">
-            <img src="assets/me.png" alt="David J. Martinez">
-        </div>
-    </section>
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="hero-title">David J. Martinez</h1>
+      <p class="hero-about">
+        Software Engineer & Georgia Tech CS Graduate. Passionate about creating impactful solutions.
+        Driven by technology, I'm dedicated to pushing boundaries and collaborating on innovative projects.
+        Let's build something amazing together!
+      </p>
+    </div>
+    <div class="hero-image">
+      <img src="assets/me.png" alt="David J. Martinez">
+    </div>
+  </section>
 
-    <section id="skills" class="skills-section">
-        <h2>Skills & Expertise</h2>
-    
-        <div class="skill-category">
-            <h3>Programming Languages</h3>
-            <p>Java, Python, C/C++, Swift, Bash, HTML, CSS, JavaScript, R, VHDL, ARM Assembly</p>
-        </div>
-    
-        <div class="skill-category">
-            <h3>Technologies & Tools</h3>
-            <p>React, Firebase, PyTorch, Git/GitHub, Docker, MongoDB, Web3, DApps, Quartus</p>
-        </div>
-    
-        <div class="skill-category">
-            <h3>Certifications</h3>
-            <p>2024 Web Development Bootcamp, iOS Development Bootcamp</p>
-        </div>
-    
-        <div class="skill-category">
-            <h3>Core Concepts</h3>
-            <p>Data Structures, Algorithms, Software Design Patterns, Web Development, Machine Learning, Networks</p>
-        </div>
-    </section>
-    
+  <section id="skills" class="skills-section">
+    <h2>Skills & Expertise</h2>
+    <div class="skill-category">
+      <h3>Programming Languages</h3>
+      <p>Java, Python, C/C++, Swift, Bash, HTML, CSS, JavaScript, R, VHDL, ARM Assembly</p>
+    </div>
+    <div class="skill-category">
+      <h3>Technologies & Tools</h3>
+      <p>React, Firebase, PyTorch, Git/GitHub, Docker, MongoDB, Web3, DApps, Quartus</p>
+    </div>
+    <div class="skill-category">
+      <h3>Certifications</h3>
+      <p>2024 Web Development Bootcamp, iOS Development Bootcamp</p>
+    </div>
+    <div class="skill-category">
+      <h3>Core Concepts</h3>
+      <p>Data Structures, Algorithms, Software Design Patterns, Web Development, Machine Learning, Networks</p>
+    </div>
+  </section>
 
-    <section id="work" class="work-section">
-        <h2>Feel free to check out my work!</h2>
-        <a href="projects.html" class="work-button">View My Work</a>
-    </section>
+  <section id="work" class="work-section">
+    <h2>Feel free to check out my work!</h2>
+    <a href="projects.html" class="work-button">View My Work</a>
+  </section>
 
-    <section id="interests" class="interests-section">
-        <h2>My Interests</h2>
-        <div class="interest-grid">
-          <div class="interest-card">
-            <img src="assets/Golf.png" alt="Golf">
-            <h3>Golf</h3>
-            <p>Golf is my favorite way to spend a relaxing afternoon. I love the challenge and the outdoors.</p>
-          </div>
-          <div class="interest-card">
-            <img src="assets/Soccer.png" alt="Soccer">
-            <h3>Soccer</h3>
-            <p>Soccer has always been a passion of mine. The thrill of the game is unmatched.</p>
-          </div>
-          <div class="interest-card">
-            <img src="assets/Travel.png" alt="Travel">
-            <h3>Travel</h3>
-            <p>I love exploring new places, experiencing different cultures, and seeing natural beauty.</p>
-          </div>
-          <div class="interest-card">
-            <img src="assets/Food.png" alt="Food">
-            <h3>Food</h3>
-            <p>I enjoy trying new dishes and flavors from different cuisines. Food is joy!</p>
-          </div>
-          <div class="interest-card">
-            <img src="assets/Music.png" alt="Music">
-            <h3>Music</h3>
-            <p>I love music of all kinds — it inspires and energizes me every day.</p>
-          </div>
-          <div class="interest-card">
-            <img src="assets/projectexpo.png" alt="Programming">
-            <h3>Programming</h3>
-            <p>Solving problems through code is something I genuinely enjoy. I love learning new languages and building things that matter.</p>
-          </div>
-        </div>
-    </section>
-      
-           
-    <section id="contact">
-        <h2>Get In Touch With Me</h2>
-        <form id="contact-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
-    
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
-    
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Got a question or a proposal, or just wanna say hello?" required></textarea>
-    
-            <button type="submit">Submit</button>
-        </form>
-    
-        <div class="contact-links">
-            <a href="https://linkedin.com/in/davidjm11" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
-            <a href="https://instagram.com/1davidmartinez1/e" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-            <a href="https://github.com/The1Lobster" target="_blank"><i class="fab fa-github"></i>Github</a>
-        </div>
-    </section>
+  <section id="interests" class="interests-section">
+    <h2>My Interests</h2>
+    <div class="interest-grid">
+      <div class="interest-card">
+        <img src="assets/Golf.png" alt="Golf">
+        <h3>Golf</h3>
+        <p>Golf is my favorite way to spend a relaxing afternoon. I love the challenge and the outdoors.</p>
+      </div>
+      <div class="interest-card">
+        <img src="assets/Soccer.png" alt="Soccer">
+        <h3>Soccer</h3>
+        <p>Soccer has always been a passion of mine. The thrill of the game is unmatched.</p>
+      </div>
+      <div class="interest-card">
+        <img src="assets/Travel.png" alt="Travel">
+        <h3>Travel</h3>
+        <p>I love exploring new places, experiencing different cultures, and seeing natural beauty.</p>
+      </div>
+      <div class="interest-card">
+        <img src="assets/Food.png" alt="Food">
+        <h3>Food</h3>
+        <p>I enjoy trying new dishes and flavors from different cuisines. Food is joy!</p>
+      </div>
+      <div class="interest-card">
+        <img src="assets/Music.png" alt="Music">
+        <h3>Music</h3>
+        <p>I love music of all kinds — it inspires and energizes me every day.</p>
+      </div>
+      <div class="interest-card">
+        <img src="assets/projectexpo.png" alt="Programming">
+        <h3>Programming</h3>
+        <p>Solving problems through code is something I genuinely enjoy. I love learning new languages and building things that matter.</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <button id="back-to-top">Back to Top ↑</button>
-    </section>
-    
+  <section id="contact">
+    <h2>Get In Touch With Me</h2>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
 
-    <footer>
-        <p>&copy; 2025 David J. Martinez. All rights reserved.</p>
-    </footer>
-    <script>
-        document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
-            e.preventDefault();
-            
-            const target = document.querySelector('#contact');
-            const targetPosition = target.getBoundingClientRect().top + window.scrollY;
-            const startPosition = window.scrollY;
-            const distance = targetPosition - startPosition;
-            const duration = 1200; // Adjust time in milliseconds (1000ms = 1s)
-            let start = null;
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
 
-            function step(timestamp) {
-                if (!start) start = timestamp;
-                const progress = timestamp - start;
-                const easeInOutCubic = progress / duration < 0.5 
-                    ? 4 * (progress / duration) ** 3 
-                    : 1 - Math.pow(-2 * (progress / duration) + 2, 3) / 2;
-                
-                window.scrollTo(0, startPosition + distance * easeInOutCubic);
-                
-                if (progress < duration) {
-                    requestAnimationFrame(step);
-                }
-            }
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Got a question or a proposal, or just wanna say hello?" required></textarea>
 
-            requestAnimationFrame(step);
-        });
-    </script>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-        const galleryCards = document.querySelectorAll('.gallery-card');
-        const gallery = document.querySelector('.gallery');
-        let currentIndex = 0;
+      <button type="submit">Submit</button>
+    </form>
 
-        // Show the first card initially
-        galleryCards[currentIndex].classList.add('active');
+    <div class="contact-links">
+      <a href="https://linkedin.com/in/davidjm11" target="_blank">LinkedIn</a>
+      <a href="https://instagram.com/1davidmartinez1/e" target="_blank">Instagram</a>
+      <a href="https://github.com/The1Lobster" target="_blank">GitHub</a>
+    </div>
+  </section>
 
-        function showNext() {
-            currentIndex = (currentIndex + 1) % galleryCards.length; // Move to next card
-            updateGallery();
+  <section>
+    <button id="back-to-top">Back to Top ↑</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 David J. Martinez. All rights reserved.</p>
+  </footer>
+
+  <!-- Smooth Scroll to Contact -->
+  <script>
+    document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector('#contact');
+      const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+      const startPosition = window.scrollY;
+      const duration = 1200;
+      let start = null;
+
+      function step(timestamp) {
+        if (!start) start = timestamp;
+        const progress = timestamp - start;
+        const easeInOutCubic = progress / duration < 0.5
+          ? 4 * (progress / duration) ** 3
+          : 1 - Math.pow(-2 * (progress / duration) + 2, 3) / 2;
+
+        window.scrollTo(0, startPosition + (targetPosition - startPosition) * easeInOutCubic);
+
+        if (progress < duration) {
+          requestAnimationFrame(step);
         }
+      }
 
-        function showPrev() {
-            currentIndex = (currentIndex - 1 + galleryCards.length) % galleryCards.length; // Move to previous card
-            updateGallery();
-        }
+      requestAnimationFrame(step);
+    });
+  </script>
 
-        function updateGallery() {
-            // Slide gallery to the correct position
-            gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
+  <!-- EmailJS Contact Form -->
+  <script>
+    (function () {
+      emailjs.init("aoytGqkYMaS1b4QLZ");
 
-        const nextButton = document.querySelector('.next');
-        const prevButton = document.querySelector('.prev');
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault();
 
-        if (nextButton && prevButton) {
-            nextButton.addEventListener('click', showNext);
-            prevButton.addEventListener('click', showPrev);
-        } else {
-            console.error('Next or Prev button not found');
-        }
+        const serviceID = "service_ypvv75o";
+        const templateID = "template_tkaj7d9";
+
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            alert("Message sent successfully!");
+            this.reset();
+          }, (error) => {
+            alert("Failed to send message. Please try again later.");
+            console.error("EmailJS error:", error);
+          });
+      });
+    })();
+  </script>
+
+  <!-- Back to Top Button -->
+  <script>
+    const backToTopButton = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
     });
 
-    </script>    
-
-    <script>
-        (function() {
-            emailjs.init("aoytGqkYMaS1b4QLZ");
-
-            document.getElementById("contact-form").addEventListener("submit", function(event) {
-                event.preventDefault();
-                
-                const serviceID = "service_ypvv75o";
-                const templateID = "template_tkaj7d9";
-
-                emailjs.sendForm(serviceID, templateID, this)
-                    .then(() => {
-                        alert("Message sent successfully!");
-                        document.getElementById("contact-form").reset();
-                    }, (error) => {
-                        alert("Failed to send message. Please try again later.");
-                        console.error("EmailJS error:", error);
-                    });
-            });
-        })();
-    </script>
-
-    <script>
-        const backToTopButton = document.getElementById('back-to-top');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) { // Show button after scrolling 300px
-                backToTopButton.classList.add('show');
-            } else {
-                backToTopButton.classList.remove('show');
-            }
-        });
-
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-    </script>
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
